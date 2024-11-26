@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>VICTORINOX</title> 
+    <link rel="stylesheet" href="css/inicios.css">
+</head>
+<body>
+
+    <style>
+
+          @media (min-width: 500px) and (max-width: 768px) {
+            .nav-button {
+              margin-left: 45%;
+            }  
+
+            .form-box {
+                position: fixed;
+                width: 500px;
+            } 
+        } 
+
+        @media (min-width: 412px) and (max-width: 500px){
+            #loginBtn{
+                width: 51%;
+                margin-right: -14%;
+                margin-left: -15%;
+            } 
+
+            #registerBtn{ 
+                width: 46%;
+                margin-left: -11px;
+                margin-right: 37px;
+            } 
+            
+            .login-container{
+                width: 363px; 
+                position: initial; 
+                margin-top: -27%;
+                opacity: 0;
+            } 
+            .register-container{
+                right: 28px !important;
+                width: 310px;
+                position: absolute; 
+                margin-top: -38%;
+               
+            }
+
+            #logo {
+                width: 92px; 
+            } 
+
+            .form-box{
+                width: 387px;
+                height: 575px;
+            }
+            } 
+
+            @media (min-width: 360px) and (max-width: 400px){
+                #loginBtn{
+                width: 51%;
+                margin-right: -14%;
+                margin-left: -21%; 
+                font-size: 73%;
+            } 
+
+            #registerBtn{ 
+                width: 44%;
+                margin-left: -11px;
+                margin-right: 37px;
+                font-size: 73%;
+            } 
+            
+            .login-container{
+                width: 314px; 
+                position: initial; 
+                margin-top: -31%; 
+                opacity: 0;
+            }  
+
+            .register-container{
+                right: 8px;
+                width: 310px;
+                position: absolute;
+               
+            }
+
+            #logo {
+                width: 92px; 
+            } 
+
+            .form-box{
+                width: 348px;
+                height: 460px;
+            }
+            }
+        
+    </style>
+    <div class="wrapper">
+    <nav class="nav">
+
+        <a href="index.html" class="img_logo col-10">
+            <img id="logo" src="img/inicios/logo 1.png">
+        </a>
+
+          <div class="nav-button">
+            <button class="btn" id="registerBtn" onclick="register()">Registro</button> 
+            <button class="btn white-btn" id="loginBtn" onclick="login()">Iniciar Sesión</button> 
+          </div> 
+          <div class="nav-menu-btn"> 
+            <i class='bx bx-menu' onclick="myMenuFuction()"></i>
+          </div>
+    </nav> 
+    <div class="form-box">
+        <div class="login-container" id="login">
+            <div class="top">
+                <header>INICIAR SESIÓN</header>
+            </div> 
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="USUARIO">
+                    <i class="bx bx-user"></i>
+                </div> 
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="CONTRASEÑA">
+                    <i class="bx bx-lock-alt"></i>
+                </div> 
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Ingresar" style="width: 48% !important; margin-right: 4%;" id="ingresarBtn">
+                    <input type="submit" class="submit" value="cancelar" style="width: 48% !important;"  id="cancelarBtn">
+                </div> 
+
+                <script>
+                    const ingresarBtn = document.getElementById('ingresarBtn');
+                    ingresarBtn.addEventListener('click', function() {
+                        window.location.href = 'sesion.html';
+                    });
+                </script> 
+
+                <script>
+                    const cancelarBtn= document.getElementById('cancelarBtn');
+                    cancelarBtn.addEventListener('click', function() {
+                       window.location.href = 'index.html';
+                    });
+                </script>
+                
+        </div>
+
+
+        <div class="register-container" id="register">
+            <div class="top">
+                <header>Registro</header>
+            </div> 
+            
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="NOMBRE">
+                    <i class="bx bx-user"></i>
+                </div> 
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="EMAIL">
+                    <i class="bx bx-envelope"></i>
+                </div> 
+                <div class="input-box">
+                    <input type="email" class="input-field" placeholder="CONFIRMACIÓN DEL EMAIL">
+                    <i class="bx bx-envelope"></i>
+                </div> 
+                <div class="input-box">
+                    <input type="tel" class="input-field" placeholder="TELÉFONO">
+                    <i class="bx bx-phone"></i>
+                </div> 
+                <div class="input-box">
+                    <input type="tel" class="input-field" placeholder="CONFIRMACIÓN DEL TELÉFONO">
+                    <i class="bx bx-phone"></i>
+                </div> 
+                <div class="two-col">
+                    <div class="one">
+                        <p style="margin-bottom: 23px; font-size: small; color: #fff;">
+                            Al hacer clic en "Enviar", estás de acuerdo con nuestros 
+                            <a href="#" style="text-decoration: none; color: blue"> 
+                            Términos y Condiciones, Aviso de Privacidad, Mecánica Ganómetro </a> 
+                            y el envío de nuestras promociones.
+                          </p>
+                    </div>
+                </div> 
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Enviar">
+                </div> 
+        </div>
+    </div>
+</div> 
+
+<script>
+    let a = document.getElementById('loginBtn'); 
+    let b = document.getElementById("registerBtn"); 
+    let x = document.getElementById("login"); 
+    let y = document.getElementById("register"); 
+
+    function login(){
+        x.style.left = "16px"; 
+        y.style.right = "-520";  
+        a.className += " white-btn"; 
+        b.className = "btn"; 
+        x.style.opacity = 1; 
+        y.style.opacity = 0; 
+    } 
+ 
+
+    function register(){
+        x.style.left = "-510px"; 
+        y.style.right = "5px";  
+        a.className = "btn"; 
+        b.className += " white-btn"; 
+        x.style.opacity = 0; 
+        y.style.opacity = 1; 
+    }
+</script>
+</body>
+</html>

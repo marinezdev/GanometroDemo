@@ -1,0 +1,30 @@
+body {
+    background-image: url("../img/index/fondo\ 1b.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+#logo{
+    width: 13%;
+    height: auto;
+    position: absolute;
+    top: 7%;
+    left: 4%; 
+}
+
+#Productos{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 21%;
+    left: 11%;  
+}   
+
+
+
+
+
+
+

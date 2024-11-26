@@ -1,0 +1,22 @@
+body {
+  background-image: url("../img/mecanica/fondo1.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100 100; 
+  } 
+
+
+#logo{
+    height: 10%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#Productos{
+  width: 59%;
+  height: auto;
+  position: absolute;
+  top: 19%;
+  left: 0%; 
+} 

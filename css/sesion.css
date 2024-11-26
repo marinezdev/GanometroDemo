@@ -1,0 +1,212 @@
+:root {
+    --primary: #a01644;
+    --secondary: #34AD54;
+    --light: #edf3f3;
+    --dark: #091E3E;
+}
+
+body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+#logo{
+    width: 121px;
+    height: auto;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+} 
+
+
+    .custom-button .ticket {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px 1px; 
+        background-color:#70112D;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 60px;
+        color: #ffffff;
+        font-size: 20px; 
+        margin-left: auto;
+        margin-right: auto; 
+        outline: none;
+    }
+
+    .custom-button .ticket::before {
+        content:  url("../img/sesion/icon\ ticket.png");
+        margin-right: 10px;  
+        margin: 5px 5px 5px 5px;
+    } 
+
+.image-container {
+        display: flex;
+        align-items: center;
+        background-position: center;
+    } 
+
+.table{
+    border-collapse: collapse; 
+    border-style: none;
+}
+.table, th, td, tr{
+    border: none; 
+    border-style: none; 
+
+}
+
+  .no-list-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+ 
+/*** Button ***/
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+    box-shadow: inset 0 0 0 50px transparent;
+}
+
+.btn-primary:hover {
+    box-shadow: inset 0 0 0 0 var(--primary);
+}
+
+.btn-secondary:hover {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+/*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    color: #a01644;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: var(--dark);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar-dark .navbar-brand h1 {
+    color: #FFFFFF;
+}
+
+.navbar-dark .navbar-toggler {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        position: relative;
+        background: #FFFFFF;
+    }
+
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: var(--dark);
+    }
+
+    .navbar-dark .navbar-brand h1 {
+        color: var(--primary);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-dark {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(0 0 0 / 10%);
+        z-index: 999;
+    }
+    
+    .sticky-top.navbar-dark {
+        position: fixed;
+        background: #FFFFFF;
+    }
+
+    .navbar-dark .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+
+    .sticky-top.navbar-dark .navbar-brand h1 {
+        color: var(--primary);
+    }
+}
+
+
+
+
+
+
+
+
